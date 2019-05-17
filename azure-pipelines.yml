@@ -15,7 +15,7 @@ steps:
   inputs:
     azureSubscription: 'Cosmos DB eFun Prototype(e67469fe-e062-482a-a4cd-b5025c1e921e)'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az cosmosdb database create testdb'
+    inlineScript: 'az cosmosdb database create -g moderakh-spark -n moderakh-spark -d testdb3'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
